@@ -539,7 +539,7 @@
 
 
 
-//  ***************minimum maximum********* 
+//  ***************minimum maximum*********
 
 // document.write(
 //     Math.max(23, 34, 46, 78, 98, 67,)
@@ -552,7 +552,7 @@
 
 
 
-// ************Random************ 
+// ************Random************
 
 
 
@@ -574,7 +574,7 @@
 
 
 
-// ********window Object with function********* 
+// ********window Object with function*********
 
 
 // function objAlert() {
@@ -613,7 +613,7 @@
 
 
 
-// ***********navigator browser learn********** 
+// ***********navigator browser learn**********
 
 // var appCodeName = navigator.appCodeName;
 // var appName = navigator.appName;
@@ -634,16 +634,110 @@
 // document.write(platform + "<br>")
 
 
-navigator.geolocation.getCurrentPosition(function (position) {
+// navigator.geolocation.getCurrentPosition(function (position) {
 
-    let altitude = position.coords.altitude;
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.longitude;
-    let speed = position.coords.speed;
+//     let altitude = position.coords.altitude;
+//     let latitude = position.coords.latitude;
+//     let longitude = position.coords.longitude;
+//     let speed = position.coords.speed;
 
 
-    document.write("altitude: " + altitude + "<br>")
-    document.write("latitude: " + latitude + "<br>")
-    document.write("longitude: " + longitude + "<br>")
-    document.write("speed: " + speed + "<br>")
-});
+//     document.write("altitude: " + altitude + "<br>")
+//     document.write("latitude: " + latitude + "<br>")
+//     document.write("longitude: " + longitude + "<br>")
+//     document.write("speed: " + speed + "<br>")
+// });
+
+
+
+
+// ****************event learn************
+
+// onklick, mouseover, mouseout
+
+// function myEvent(msg) {
+//     console.log(msg);
+
+// }
+
+
+
+// // ********** Dom menupolition*****
+
+// var myElements = document.getElementsByClassName('myClass');
+
+// myElements[2].innerHTML = "Eid Mobarok"
+
+
+
+
+
+// ********** Dom document*****
+
+// cookieStore, Domain, lasrModified, title, url.  thid all item learn
+
+// function Demo() {
+//     var info = document.URL;
+//     document.getElementsByTagName('p')[0].innerHTML = info;
+
+// }
+
+// **replace*
+
+// function Demo() {
+//     document.open('text/html', 'replace');
+//     document.write("<h2>Rakibul Hasan<h2/>");
+//     document.close();
+
+// }
+
+
+
+
+// *********window open*****
+
+// function Demo() {
+//     let w = window.open();
+//     w.document.open();
+//     w.document.write("Hello Rakibul Hasan this is new window");
+//     w.document.close();
+
+// }
+
+
+// ******count learn*******
+
+// function Demo() {
+//     let MyItems = document.getElementsByTagName('p');
+//     let ItemCount = MyItems.length;
+//     alert(ItemCount);
+// }
+
+
+// *** number jog kora ***
+
+// function AddTwoNumber() {
+//     let num1 = document.getElementById('num1').value;
+//     let num2 = document.getElementById('num2').value;
+//     let result = parseFloat(num1) + parseFloat(num2);
+
+//     alert(result);
+// }
+
+
+
+
+
+// ******CSS menupulet***** 
+
+
+function AddStyle() {
+    let H1Tag = document.getElementById('myId');
+    H1Tag.classList.add('text-primary')
+}
+
+
+function RemoveStyle() {
+    let H1Tag = document.getElementById('myId');
+    H1Tag.classList.remove('text-primary')
+}
