@@ -728,16 +728,313 @@
 
 
 
-// ******CSS menupulet***** 
+// ******CSS menupulet*****
 
 
-function AddStyle() {
-    let H1Tag = document.getElementById('myId');
-    H1Tag.classList.add('text-primary')
-}
+// function AddStyle() {
+//     let H1Tag = document.getElementById('myId');
+//     H1Tag.classList.add('text-primary')
+// }
 
 
-function RemoveStyle() {
-    let H1Tag = document.getElementById('myId');
-    H1Tag.classList.remove('text-primary')
-}
+// function RemoveStyle() {
+//     let H1Tag = document.getElementById('myId');
+//     H1Tag.classList.remove('text-primary')
+// }
+
+
+
+// ********css attribute change*******
+
+// function ChangeAttr() {
+//     var myImg = document.getElementById('myImg');
+//     myImg.height = "600"
+
+// }
+
+
+
+
+// **********query selector learn**********
+
+
+// function FindElements() {
+//     document.querySelector('h2').innerHTML = "h2 hasbeen manupulated"
+//     document.querySelector('.myClass').innerHTML = "p tag hasbeen manupulated"
+
+// }
+
+
+// ***********Ajax Learn******
+
+// function ExcGetRequest() {
+
+//     var URL = "https://crud.teamrabbil.com/api/v1/ReadProduct";
+//     var Configuration = { method: "GET" };
+
+//     fetch(URL, Configuration)
+//         .then(response => response.json())
+//         .then(result => console.log(result))
+//         .catch(err => console.log(err))
+// }
+
+
+
+
+
+// *******ecma script practice******
+
+// global scope & localScpe
+
+// //           local**
+
+//              function myFun() {
+//              var name = "rakibul hasan";
+//              console.log(name);
+//              }
+
+//              myFun()
+
+
+
+// //
+//                     // ***global**
+//                     var name = "rakibul hasan";
+//                     function myFun() {
+
+//                     }
+//                    console.log(name);
+//                     myFun()
+
+
+
+// let iPhone = { price: "160kBDT", color: " white", performance: true, bestCamera: true };
+
+// for (let props in iPhone) {
+//     console.log(props + "=" + iPhone[props]);
+
+// };
+
+
+
+
+// *******return function*********
+
+// function MyFunctionOne() {
+//     return 20;
+// }
+
+// function MyFunctionTwo() {
+//     return MyFunctionOne();
+// }
+
+// console.log(MyFunctionTwo());
+
+
+// let myArr = (...r) => {
+//     return "hello world"
+// }
+// console.log(myArr());
+
+
+
+
+// *****Array inside array******
+
+// var bangladesh = ["Dhaka", "khulna", "mymensingh"]
+// var india = ["chennai", " kolkata"]
+// var china = ["Uhan", "Shanghai", "Hongkong"]
+
+// var asia = [bangladesh, india, china]
+// console.log(asia[0][2]);
+
+
+
+// *********Array destructureing*******
+
+// var countries = ["Bang", "ind", "canada", "pakisatn"];
+
+// var [a, , , c] = countries
+
+// console.log(c);
+
+
+
+
+// ********Map leaen *****
+
+
+// var myMap = new Map();
+
+// myMap.set("Key1", "Bangladesh")
+// myMap.set("Key2", "india")
+// myMap.set("Key3", "pakistan")
+// myMap.set("Key4", "vutan")
+// myMap.set("Key5", "nepal")
+
+
+// if (myMap.has("key4")) {
+
+//     console.log("yes");
+// }
+// else {
+//     console.log("No");
+
+// }
+
+
+
+// ********Set learn********
+
+// let mySet = new Set()
+
+// mySet.add("Bangladesh")
+// mySet.add("india")
+// mySet.add("pakistan")
+// mySet.add("AStrolia")
+// mySet.add("maldip")
+
+
+// console.log(mySet);
+
+
+// let mySet = new Set()
+
+// mySet.add("Bangladesh")
+// mySet.add("india")
+// mySet.add("pakistan")
+// mySet.add("Australia")
+// mySet.add("Muldip")
+
+// mySet.delete("india")
+// console.log(mySet);
+
+
+
+
+// *****Class learn*****
+
+// class myClass {
+//     myFun1() {
+//         console.log("hello my function");
+//     }
+//     myFun2() {
+//         console.log("hello my function");
+//     }
+//     myFun3() {
+//         console.log("hello my function");
+
+//     }
+// };
+
+// var obj = new myClass;
+
+// obj.myFun1();
+
+
+
+// *****Class Constructor with paramiter****
+
+// class myClass {
+//     constructor(a, b) {
+//         this.firstNum = a
+//         this.secondNum = b
+//     }
+
+//     add() {
+//         let result = this.firstNum + this.secondNum;
+//         console.log(result);
+
+//     }
+// };
+
+// var obj = new myClass(10, 20)
+
+// obj.add();
+
+
+
+// **class inheritance learn**
+
+// class parent {
+//     hello0(params) {
+//         console.log("hello function0");
+
+//     }
+//     hello1(params) {
+//         console.log("hello function1");
+
+//     }
+// }
+
+// class child extends parent {
+
+// }
+
+// var obj = new child();
+// obj.hello0();
+
+
+
+
+// // **class inheritance over writing**
+
+// class parent {
+//     hello0(params) {
+//         console.log("hello function0");
+
+//     }
+//     hello1(params) {
+//         console.log("hello function1");
+
+//     }
+// }
+
+// class child extends parent {
+//     hello0(params) {
+//         console.log("hello function0 child");
+
+//     }
+
+// }
+
+// var obj = new child();
+// obj.hello0();
+
+
+
+
+
+
+// // **class super learn**
+
+// class parent {
+//     hello0(params) {
+//         console.log("hello function0");
+
+//     }
+//     hello1(params) {
+//         console.log("hello function1");
+
+//     }
+// }
+
+// class child extends parent {
+
+//     demo() {
+//         super.hello0();
+//     }
+
+// }
+
+// var obj = new child();
+// obj.demo();
+
+
+
+
+// ****Module Learn*******
+
+
+const laptop = "asus leptop"
+export { laptop }
